@@ -1,0 +1,72 @@
+<%= form_with(model: buy_back, local: true), :html => {:multipart => true} do |form| %>
+  <% if buy_back.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(buy_back.errors.count, "error") %> prohibited this buy_back from being saved:</h2>
+
+      <ul>
+      <% buy_back.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :buy_back_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_name %>
+    <%= form.text_field :middle_name, id: :buy_back_middle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :buy_back_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :buy_back_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Address #2" %>
+    <%= form.text_field :address_two, id: :buy_back_address_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :buy_back_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :buy_back_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip_code %>
+    <%= form.text_field :zip_code, id: :buy_back_zip_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :buy_back_email %>
+  </div>
+  <div>
+    <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
+      </p>
+      <input type="checkbox">
+    </div>
+  <div class="field">
+    <%= form.label "Driver's License" %>
+    <%= form.text_field :drive_license, id: :buy_back_drive_license %>
+  </div>
+  <%=f.file_field :img =>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
