@@ -16,14 +16,6 @@ class BuyBacksController < ApplicationController
   def new
     @buy_back = BuyBack.new
   end
-  u.avatar = params[:file]
-  File.open('somewhere') do |f|
-  u.avatar = f
-  u.save!
-u.avatar.url # => '/url/to/file.png'
-u.avatar.current_path # => 'path/to/file.png'
-u.avatar_identifier # => 'file.png'
-end
 
   # GET /buy_backs/1/edit
   def edit
@@ -77,6 +69,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def buy_back_params
-      params.require(:buy_back).permit(:first_name, :middle_name, :last_name, :address, :address_two, :city, :state, :zip_code, :email, :drive_license)
+      params.require(:buy_back).permit(:remove_image, :first_name, :middle_name, :last_name, :address, :address_two, :city, :state, :zip_code, :email, :image, :drive_license, devices_attributes:[:id, :quantity, :device_name, :carrier, :imei, :price, :_destroy])
     end
 end

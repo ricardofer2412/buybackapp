@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity: 
+  carrier: MyString
+  imei: MyString
+  price: 1
+
+two:
+  quantity: 
+  carrier: MyString
+  imei: MyString
+  price: 1
