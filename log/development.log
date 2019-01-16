@@ -6718,3 +6718,541 @@ Processing by BuyBacksController#index as HTML
 Completed 200 OK in 37ms (Views: 27.8ms | ActiveRecord: 1.2ms)
 
 
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-01-16 12:19:38 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 7462ms (Views: 7336.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 12:20:04 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (206.8ms)
+  Rendered buy_backs/new.html.erb within layouts/application (265.8ms)
+Completed 200 OK in 675ms (Views: 597.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 12:22:59 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 402ms (Views: 352.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 12:24:49 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 393ms (Views: 340.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 12:30:51 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 520ms (Views: 469.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 13:27:26 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (2.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 523ms (Views: 457.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:28:46 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (30.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (92.9ms)
+Completed 200 OK in 592ms (Views: 535.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:29:17 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (10.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 467ms (Views: 413.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:30:05 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (10.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 500ms (Views: 446.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:30:19 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 439ms (Views: 387.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:30:54 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 426ms (Views: 372.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:31:23 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 432ms (Views: 379.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:32:25 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 447ms (Views: 392.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:33:00 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 445ms (Views: 391.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:33:38 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 441ms (Views: 386.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:34:01 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 430ms (Views: 376.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:34:17 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 439ms (Views: 386.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:34:43 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 422ms (Views: 368.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:35:59 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 431ms (Views: 378.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:36:01 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 439ms (Views: 385.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:37:55 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 423ms (Views: 368.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:37:57 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 439ms (Views: 379.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:38:26 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 434ms (Views: 380.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:39:45 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 433ms (Views: 378.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:40:17 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 419ms (Views: 366.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:40:30 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 429ms (Views: 374.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:41:51 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 428ms (Views: 374.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 13:41:59 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 441ms (Views: 388.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 14:14:24 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (2.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 410ms (Views: 354.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 14:14:29 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (8.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 452ms (Views: 392.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 14:16:38 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (8.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 431ms (Views: 377.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 14:16:47 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 426ms (Views: 373.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 14:17:17 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 438ms (Views: 385.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 14:17:21 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 435ms (Views: 383.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:41:08 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 436ms (Views: 383.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:42:53 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 3033ms (Views: 2979.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:43:08 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 2598ms (Views: 2545.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:43:30 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 2527ms (Views: 2474.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 15:45:55 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 349ms (Views: 301.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:45:57 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 397ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:46:00 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 408ms (Views: 356.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:47:07 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 2513ms (Views: 2460.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:47:19 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 2480ms (Views: 2429.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:49:54 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (10.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 491ms (Views: 438.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:50:25 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 429ms (Views: 377.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:50:46 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 466ms (Views: 414.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:51:08 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 423ms (Views: 370.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:51:57 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (8.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 2486ms (Views: 2432.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:52:12 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 413ms (Views: 362.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:52:14 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 450ms (Views: 396.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:52:17 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 369ms (Views: 330.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:52:49 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 366ms (Views: 315.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:52:51 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 406ms (Views: 354.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-01-16 15:53:01 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bJjG3A7PQRflsqzMC4HLqwCLaScWEEpteOmkdbEuUVNANZ80hvkAspT7un9zibIg5IGpY3vilLGW5he7AZAgCg==", "buy_back"=>{"first_name"=>"Sandra", "middle_name"=>"D", "last_name"=>"Cortes", "address"=>"929 Spring Cir", "address_two"=>"191", "city"=>"Deerfield Beahc", "state"=>"FL", "zip_code"=>"33431", "email"=>"support@mobilesource.com", "drive_license"=>""}, "button"=>""}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "middle_name", "last_name", "address", "address_two", "city", "state", "zip_code", "email", "drive_license", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sandra"], ["middle_name", "D"], ["last_name", "Cortes"], ["address", "929 Spring Cir"], ["address_two", "191"], ["city", "Deerfield Beahc"], ["state", "FL"], ["zip_code", "33431"], ["email", "support@mobilesource.com"], ["drive_license", ""], ["created_at", "2019-01-16 20:53:01.619489"], ["updated_at", "2019-01-16 20:53:01.619489"]]
+  [1m[35m (180.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/18
+Completed 302 Found in 196ms (ActiveRecord: 182.9ms)
+
+
+Started GET "/buy_backs/18" for 127.0.0.1 at 2019-01-16 15:53:01 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 18]]
+  Rendered buy_backs/show.html.erb within layouts/application (449.7ms)
+Completed 200 OK in 891ms (Views: 780.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:53:04 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 373ms (Views: 323.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:53:22 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 356ms (Views: 303.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:53:45 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 356ms (Views: 304.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:54:59 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2360ms (Views: 2309.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-16 15:55:18 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 359ms (Views: 307.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 15:58:27 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 454ms (Views: 395.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 16:09:40 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 2354ms (Views: 2301.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 16:10:06 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 2475ms (Views: 2421.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-16 17:44:54 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 365ms (Views: 314.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 17:44:56 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (8.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 417ms (Views: 366.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-16 17:45:37 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (7.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 2565ms (Views: 2512.3ms | ActiveRecord: 0.0ms)
+
+
