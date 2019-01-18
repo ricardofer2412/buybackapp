@@ -7256,3 +7256,895 @@ Processing by BuyBacksController#new as HTML
 Completed 200 OK in 2565ms (Views: 2512.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-18 16:43:14 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 2548ms (Views: 2433.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/device" for 127.0.0.1 at 2019-01-18 16:43:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/device"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:43:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/devices"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:45:12 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 427ms (Views: 325.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/devices/new" for 127.0.0.1 at 2019-01-18 16:45:16 -0500
+Processing by DevicesController#new as HTML
+  Rendering devices/new.html.erb within layouts/application
+  Rendered devices/_form.html.erb (96.9ms)
+  Rendered devices/new.html.erb within layouts/application (144.9ms)
+Completed 200 OK in 517ms (Views: 449.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/devices" for 127.0.0.1 at 2019-01-18 16:45:18 -0500
+Processing by DevicesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5eoa2O6t48ToWnkYoidBfA5SLt25kgy8M5paPQuKp5IpXqr35Ru6QO0tzCDS4s5fQvOb/PEEkCvRVLcravoZtg==", "commit"=>"Create Device"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (20.0ms)[0m  [1m[32mINSERT INTO "devices" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-01-18 21:45:18.249097"], ["updated_at", "2019-01-18 21:45:18.249097"]]
+  [1m[35m (97.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/devices/8
+Completed 302 Found in 124ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 16:45:18 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 415ms (Views: 343.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:45:26 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 331ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:54:30 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 396ms (Views: 341.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:56:44 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (385.8ms)
+Completed 500 Internal Server Error in 592ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `carrier' for #<#<Class:0xab7ccf8>:0xc6444c0>):
+    16:     <% @devices.each do |device| %>
+    17:       <tr>
+    18:         <td><%= device.device_name %></td>
+    19:         <td><%= carrier.device_name %></td>
+    20:         <td><%= imei.device_name %></td>
+    21:         <td><%= price.device_name %></td> 
+    22:         <td><%= link_to 'Show', device %></td>
+  
+app/views/devices/index.html.erb:19:in `block in _app_views_devices_index_html_erb__702109600_103949664'
+app/views/devices/index.html.erb:16:in `_app_views_devices_index_html_erb__702109600_103949664'
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:58:20 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 350ms (Views: 297.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 16:58:34 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 402ms (Views: 340.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/18/edit" for 127.0.0.1 at 2019-01-18 16:58:37 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 18]]
+  Rendered buy_backs/_form.html.erb (170.9ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (220.9ms)
+Completed 200 OK in 616ms (Views: 561.8ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/buy_backs/18" for 127.0.0.1 at 2019-01-18 16:59:12 -0500
+Processing by BuyBacksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n8BasSseVk1BBiKMjYjD3yaQ2dZb8834mZbukOzbZoUFQzf1I3f5SVCVMxZQ5fxp6LcdGsf6xC1OxkBQwFV2DQ==", "buy_back"=>{"first_name"=>"Sandra", "middle_name"=>"D", "last_name"=>"Cortes", "address"=>"929 Spring Cir", "address_two"=>"191", "city"=>"Deerfield Beahc", "state"=>"FL", "zip_code"=>"33431", "email"=>"support@mobilesource.com", "devices_attributes"=>{"0"=>{"quantity"=>"1", "carrier"=>"AT&T", "device_name"=>"iPhone 6", "imei"=>"3615616516515", "price"=>"19.99"}, "1"=>{"quantity"=>"1", "carrier"=>"T-Mobile", "device_name"=>"iPhone 7", "imei"=>"6416516516516", "price"=>"89.99"}}, "drive_license"=>""}, "button"=>"", "id"=>"18"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "devices" ("quantity", "carrier", "imei", "price", "created_at", "updated_at", "device_name", "buy_back_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["quantity", 1], ["carrier", "AT&T"], ["imei", "3615616516515"], ["price", 19], ["created_at", "2019-01-18 21:59:12.244839"], ["updated_at", "2019-01-18 21:59:12.244839"], ["device_name", "iPhone 6"], ["buy_back_id", 18]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("quantity", "carrier", "imei", "price", "created_at", "updated_at", "device_name", "buy_back_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["quantity", 1], ["carrier", "T-Mobile"], ["imei", "6416516516516"], ["price", 89], ["created_at", "2019-01-18 21:59:12.249837"], ["updated_at", "2019-01-18 21:59:12.249837"], ["device_name", "iPhone 7"], ["buy_back_id", 18]]
+  [1m[35m (82.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/18
+Completed 302 Found in 184ms (ActiveRecord: 84.0ms)
+
+
+Started GET "/buy_backs/18" for 127.0.0.1 at 2019-01-18 16:59:12 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 18]]
+  Rendered buy_backs/show.html.erb within layouts/application (115.9ms)
+Completed 200 OK in 523ms (Views: 464.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 16:59:14 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 358ms (Views: 309.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:59:18 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 366ms (Views: 313.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/9" for 127.0.0.1 at 2019-01-18 16:59:21 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 357ms (Views: 301.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 16:59:25 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 330ms (Views: 295.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:03:42 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 367ms (Views: 314.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/9" for 127.0.0.1 at 2019-01-18 17:03:44 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (49.4ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name + @buy_back.last_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_89634744'
+Started GET "/devices/9" for 127.0.0.1 at 2019-01-18 17:04:04 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_55435308'
+Started GET "/devices/9" for 127.0.0.1 at 2019-01-18 17:08:58 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_105249576'
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:10:20 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 375ms (Views: 313.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:12:17 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 371ms (Views: 318.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:13:57 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 435ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"buy_backs"}, missing required keys: [:id]):
+    19:       <li class="nav-item active">
+    20:         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    21:       </li>
+    22:       <li><%=link_to "BuyBack", buy_back_path%></li>
+    23:       <li><%=link_to "Devices", devices_path%></li>
+    24: 
+    25:     </ul>
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___1060984968_62659788'
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:14:47 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 365ms (Views: 311.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:14:50 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 337ms (Views: 290.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:14:51 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 357ms (Views: 304.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:14:52 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (15.6ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 344ms (Views: 281.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:14:54 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 371ms (Views: 307.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:16:02 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 374ms (Views: 319.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-18 17:16:04 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (11.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 480ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-01-18 17:16:19 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KSvJ8Xj590RBAEPF7t8OqFW4waaB4MF0MdYyd825RT8FhpAZ8M+24TBJVXaW13cjsbIB4uwSH6jf2YG5fQc0Zg==", "buy_back"=>{"first_name"=>"Sandra", "middle_name"=>"D", "last_name"=>"Cortes", "address"=>"929 Spring Cir", "address_two"=>"191", "city"=>"Deerfield Beahc", "state"=>"FL", "zip_code"=>"33431", "email"=>"support@mobilesource.com", "devices_attributes"=>{"0"=>{"quantity"=>"1", "carrier"=>"AT*T", "device_name"=>"iPhone 6", "imei"=>"353294074709363", "price"=>""}}, "drive_license"=>""}, "button"=>""}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "middle_name", "last_name", "address", "address_two", "city", "state", "zip_code", "email", "drive_license", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sandra"], ["middle_name", "D"], ["last_name", "Cortes"], ["address", "929 Spring Cir"], ["address_two", "191"], ["city", "Deerfield Beahc"], ["state", "FL"], ["zip_code", "33431"], ["email", "support@mobilesource.com"], ["drive_license", ""], ["created_at", "2019-01-18 22:16:19.314374"], ["updated_at", "2019-01-18 22:16:19.314374"]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("quantity", "carrier", "imei", "created_at", "updated_at", "device_name", "buy_back_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["quantity", 1], ["carrier", "AT*T"], ["imei", "353294074709363"], ["created_at", "2019-01-18 22:16:19.319371"], ["updated_at", "2019-01-18 22:16:19.319371"], ["device_name", "iPhone 6"], ["buy_back_id", 19]]
+  [1m[35m (65.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/19
+Completed 302 Found in 106ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/buy_backs/19" for 127.0.0.1 at 2019-01-18 17:16:19 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 19]]
+  Rendered buy_backs/show.html.erb within layouts/application (59.0ms)
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `*' for nil:NilClass):
+    77:       <td><%= @devices.device_name %> </td>
+    78:       <td><%= @devices.imei %> </td>
+    79:       <td><%= number_to_currency(@devices.price) %> </td>
+    80:       <td><%= number_to_currency(@devices.price * @devices.quantity ) %> </td>
+    81:       <% running_total =  running_total + (@devices.price * @devices.quantity) %>
+    82: 
+    83:     </tr>
+  
+app/views/buy_backs/show.html.erb:80:in `block in _app_views_buy_backs_show_html_erb__503017640_104105820'
+app/views/buy_backs/show.html.erb:73:in `_app_views_buy_backs_show_html_erb__503017640_104105820'
+Started POST "/buy_backs" for 127.0.0.1 at 2019-01-18 17:16:29 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KSvJ8Xj590RBAEPF7t8OqFW4waaB4MF0MdYyd825RT8FhpAZ8M+24TBJVXaW13cjsbIB4uwSH6jf2YG5fQc0Zg==", "buy_back"=>{"first_name"=>"Sandra", "middle_name"=>"D", "last_name"=>"Cortes", "address"=>"929 Spring Cir", "address_two"=>"191", "city"=>"Deerfield Beahc", "state"=>"FL", "zip_code"=>"33431", "email"=>"support@mobilesource.com", "devices_attributes"=>{"0"=>{"quantity"=>"1", "carrier"=>"AT*T", "device_name"=>"iPhone 6", "imei"=>"353294074709363", "price"=>"59.99"}}, "drive_license"=>"R651651616"}, "button"=>""}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "middle_name", "last_name", "address", "address_two", "city", "state", "zip_code", "email", "drive_license", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sandra"], ["middle_name", "D"], ["last_name", "Cortes"], ["address", "929 Spring Cir"], ["address_two", "191"], ["city", "Deerfield Beahc"], ["state", "FL"], ["zip_code", "33431"], ["email", "support@mobilesource.com"], ["drive_license", "R651651616"], ["created_at", "2019-01-18 22:16:30.937713"], ["updated_at", "2019-01-18 22:16:30.937713"]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("quantity", "carrier", "imei", "price", "created_at", "updated_at", "device_name", "buy_back_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["quantity", 1], ["carrier", "AT*T"], ["imei", "353294074709363"], ["price", 59], ["created_at", "2019-01-18 22:16:30.941710"], ["updated_at", "2019-01-18 22:16:30.941710"], ["device_name", "iPhone 6"], ["buy_back_id", 20]]
+  [1m[35m (205.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/20
+Completed 302 Found in 1032ms (ActiveRecord: 208.9ms)
+
+
+Started GET "/buy_backs/20" for 127.0.0.1 at 2019-01-18 17:16:31 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 20]]
+  Rendered buy_backs/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 392ms (Views: 328.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:16:35 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 343ms (Views: 297.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:16:40 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 345ms (Views: 298.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:21:36 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (52.0ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_98033568'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:23:01 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_104391840'
+Started GET "/" for 127.0.0.1 at 2019-01-18 17:25:17 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 413ms (Views: 350.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:25:19 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 385ms (Views: 317.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:25:21 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (55.0ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_101086740'
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-18 17:27:19 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 358ms (Views: 308.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/20" for 127.0.0.1 at 2019-01-18 17:27:22 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 20]]
+  Rendered buy_backs/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 361ms (Views: 306.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:27:26 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 357ms (Views: 307.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:27:27 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (52.0ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_back.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_97100760'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:28:19 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (57.0ms)
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_100470492'
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:28:27 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 3022ms (Views: 2147.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:28:33 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (51.9ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.first_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_86094096'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:28:49 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `last_name' for nil:NilClass):
+    4: 
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+    8: </p>
+    9: 
+   10: <p>
+  
+app/views/devices/show.html.erb:7:in `_app_views_devices_show_html_erb__96982296_45928560'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:30:49 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_back in @device.buy_back %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_105423672'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:31:35 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `buy_back' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_back in @devices.buy_back %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_98334588'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:31:54 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (60.0ms)
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `buy_backs' for #<Device:0xc7e00f0>
+Did you mean?  buy_back
+               buy_back=
+               buy_back_id):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_backs in @device.buy_backs %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_104601804'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:32:04 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (63.0ms)
+Completed 500 Internal Server Error in 1225ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `buy_backs' for #<Device:0x7476ab0>
+Did you mean?  buy_back
+               buy_back=
+               buy_back_id):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_back in @device.buy_backs %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_60969228'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:32:12 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (877.5ms)
+Completed 500 Internal Server Error in 2056ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_back in @device.buy_back %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_100191360'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:32:25 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (130.9ms)
+Completed 500 Internal Server Error in 2136ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `buy_back' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_back in @devices.buy_back %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_101410248'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:32:50 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `buy_back' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: 
+    4: <% for @buy_backs in @devices.buy_back %>
+    5: <p>
+    6:   <strong>Customer Name</strong>
+    7:   <%= @buy_backs.last_name %>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_90162516'
+Started GET "/devices/8" for 127.0.0.1 at 2019-01-18 17:33:13 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 376ms (Views: 321.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:33:16 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 349ms (Views: 304.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/11" for 127.0.0.1 at 2019-01-18 17:33:19 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 368ms (Views: 302.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices" for 127.0.0.1 at 2019-01-18 17:47:08 -0500
+Processing by DevicesController#index as HTML
+  Rendering devices/index.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices"[0m
+  Rendered devices/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 369ms (Views: 317.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/devices/12" for 127.0.0.1 at 2019-01-18 17:47:10 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 339ms (Views: 298.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/devices/12" for 127.0.0.1 at 2019-01-18 17:48:29 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (54.0ms)
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: <p>
+    3:   <strong>First name:</strong>
+    4:   <%= @buy_back.first_name %>
+    5: </p>
+    6: 
+    7: <p>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_66132660'
+Started GET "/devices/12" for 127.0.0.1 at 2019-01-18 17:48:46 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (52.0ms)
+Completed 500 Internal Server Error in 254ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: <p>
+    3:   <strong>First name:</strong>
+    4:   <%= @buy_backs.first_name %>
+    5: </p>
+    6: 
+    7: <p>
+  
+app/views/devices/show.html.erb:4:in `_app_views_devices_show_html_erb__96982296_42011928'
+Started GET "/devices/12" for 127.0.0.1 at 2019-01-18 17:49:37 -0500
+Processing by DevicesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT  "devices".* FROM "devices" WHERE "devices"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering devices/show.html.erb within layouts/application
+  Rendered devices/show.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 257ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>First name:</strong>
+    5:   <%= @buy_back.first_name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/devices/show.html.erb:5:in `_app_views_devices_show_html_erb__96982296_104139972'
