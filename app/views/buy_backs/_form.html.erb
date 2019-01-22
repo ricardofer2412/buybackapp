@@ -145,17 +145,11 @@
                     <%= form.label :comments %>
                       </div>
                       <div class="col-xs-8">
-                        <%= form.text_area :comments, size: "40x10" %>
+                        <%= form.text_area :comments, size: "30x10" %>
                       </div>
                     </div>
                     </div>
-               <div class='form-group'>
-                <div class="row">
-                  <div class="col-lg-4">
-                 <%= collection_select(:carrier, :carrier, Carrier.all, :id, :carrier)  %>
-                      </div>
-                    </div>
-                    </div>
+               
 
 </div>
   <hr>
@@ -172,27 +166,27 @@
     <div class="row">
       <div class="col-xs-3"
       <strong>Qty</strong>
-      <%= new.text_field :quantity %><br>
+      <%= new.text_field :quantity %><%= new.remove_nested_fields_link %><br>
       </div>
       <div class="col-xs-3"
         <strong>Carrier</strong>
-      <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %> <br>
+      <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %><%= new.remove_nested_fields_link %> <br>
       </div>
       <div class="col-xs-3">
         <strong>Model</strong>
-        <%= new.text_field :device_name%>  <br>
+        <%= new.text_field :device_name%> <%= new.remove_nested_fields_link %>  <br>
       </div>
       <div class="col-xs-3">
         <strong>IMEI</strong>
-         <%= new.text_field :imei %><br>
+         <%= new.text_field :imei %><%= new.remove_nested_fields_link %><br>
        </div>
        <div class="col-xs-3">
         <strong>Price </strong>
-        <%= new.text_field :price%>  <br>
+        <%= new.text_field :price%> <%= new.remove_nested_fields_link %> <br>
       </div>
       <div class="col-xs-3">
         <strong>Comments</strong>
-        <%= new.text_area :comments%>  <br>
+        <%= new.text_area :comments%><%= new.remove_nested_fields_link %>  <br>
       </div>
         <hr>
       </div>

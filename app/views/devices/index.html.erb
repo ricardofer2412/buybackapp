@@ -18,7 +18,7 @@
         <td><%= device.device_name %></td>
         <td><%= device.carrier %></td>
         <td><%= device.imei %></td>
-        <td><%= device.price %></td> 
+        <td><%= number_to_currency(device.price)%></td> 
         <td><%= link_to 'Show', device %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
