@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  device_carrier: MyString
+  device_model: MyString
+  device_sale_price: MyString
+  device_buy_back_price: MyString
+  device_repair_price: MyString
+
+two:
+  device_carrier: MyString
+  device_model: MyString
+  device_sale_price: MyString
+  device_buy_back_price: MyString
+  device_repair_price: MyString

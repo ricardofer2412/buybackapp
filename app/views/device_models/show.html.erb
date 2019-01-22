@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device carrier:</strong>
+  <%= @device_model.device_carrier %>
+</p>
+
+<p>
+  <strong>Device model:</strong>
+  <%= @device_model.device_model %>
+</p>
+
+<p>
+  <strong>Device sale price:</strong>
+  <%= @device_model.device_sale_price %>
+</p>
+
+<p>
+  <strong>Device buy back price:</strong>
+  <%= @device_model.device_buy_back_price %>
+</p>
+
+<p>
+  <strong>Device repair price:</strong>
+  <%= @device_model.device_repair_price %>
+</p>
+
+<%= link_to 'Edit', edit_device_model_path(@device_model) %> |
+<%= link_to 'Back', device_models_path %>

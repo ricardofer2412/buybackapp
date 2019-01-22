@@ -63,6 +63,7 @@
   <th> Carrier </th>
   <th> Model </th>
   <th> IMEI </th>
+  <th> Comments </th> 
   <th> Price </th>
   <th> Sub-Total  </th>
 
@@ -70,12 +71,13 @@
   </thead>
   <tbody>
     <% running_total = 0 %>
-    <% for @devices in @buy_back.devices %>
+      <% for @devices in @buy_back.devices %>
     <tr>
       <td><%= @devices.quantity %> </td>
       <td><%= @devices.carrier %> </td>
       <td><%= @devices.device_name %> </td>
       <td><%= @devices.imei %> </td>
+      <td><%= @devices.comments%></td> 
       <td><%= number_to_currency(@devices.price) %> </td>
       <td><%= number_to_currency(@devices.price * @devices.quantity ) %> </td>
       <% running_total =  running_total + (@devices.price * @devices.quantity) %>
