@@ -16,6 +16,16 @@
       <div class='form-group'>
         <div class="row">
           <div class="col-lg-4">
+            <%= form.label :company %>
+              </div>
+              <div class="col-xs-8">
+                <%= form.text_field :company %>
+              </div>
+            </div>
+            </div>
+      <div class='form-group'>
+        <div class="row">
+          <div class="col-lg-4">
             <%= form.label :first_name %>
               </div>
               <div class="col-xs-8">
@@ -182,7 +192,7 @@
       </div>
       <div class="col-xs-3">
         <strong>Comments</strong>
-        <%= new.text_area :comments %>  <br>
+        <%= new.text_area :comments%>  <br>
       </div>
         <hr>
       </div>

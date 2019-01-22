@@ -10229,3 +10229,91 @@ Processing by BuyBacksController#show as HTML
 Completed 200 OK in 495ms (Views: 427.2ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCompanyToBuyBack (20190122201841)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (16.3ms)[0m  [1m[35mALTER TABLE "buy_backs" ADD "company" varchar[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190122201841"]]
+  [1m[35m (94.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-01-22 15:22:26 -0500
+Started GET "/" for 127.0.0.1 at 2019-01-22 15:22:27 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (55.0ms)
+  Rendered buy_backs/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 2715ms (Views: 2547.6ms | ActiveRecord: 1.0ms)
+
+
+Completed 200 OK in 26436ms (Views: 26241.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-22 15:22:57 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  [1m[36mCarrier Load (0.0ms)[0m  [1m[34mSELECT "carriers".* FROM "carriers"[0m
+  Rendered buy_backs/_form.html.erb (396.1ms)
+  Rendered buy_backs/new.html.erb within layouts/application (448.1ms)
+Completed 200 OK in 825ms (Views: 768.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-22 15:23:03 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 359ms (Views: 307.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/18/edit" for 127.0.0.1 at 2019-01-22 15:23:04 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mCarrier Load (1.0ms)[0m  [1m[34mSELECT "carriers".* FROM "carriers"[0m
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 18]]
+  Rendered buy_backs/_form.html.erb (109.0ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (160.9ms)
+Completed 200 OK in 549ms (Views: 466.3ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/buy_backs/18" for 127.0.0.1 at 2019-01-22 15:23:15 -0500
+Processing by BuyBacksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1gXBHdEJmMe+pll9o4YsZI51zB9qT2cleT410potiEpeyyGxoZCjfO78IYfUW5APPh49e5eO9J9jJsoMoXMZaQ==", "buy_back"=>{"company"=>"MobileSource", "first_name"=>"Sandra", "middle_name"=>"D", "last_name"=>"Cortes", "address"=>"929 Spring Cir", "address_two"=>"191", "city"=>"Deerfield Beahc", "state"=>"FL", "zip_code"=>"33431", "email"=>"support@mobilesource.com", "tracking_number"=>"", "phone_number"=>"", "comments"=>"", "devices_attributes"=>{"0"=>{"quantity"=>"1", "carrier"=>"AT&T", "device_name"=>"iPhone 6", "imei"=>"3615616516515", "price"=>"19", "comments"=>"Good", "id"=>"9"}, "1"=>{"quantity"=>"1", "carrier"=>"T-Mobile", "device_name"=>"iPhone 7", "imei"=>"6416516516516", "price"=>"89", "comments"=>"", "id"=>"10"}}, "drive_license"=>""}, "carrier"=>{"carrier"=>"1"}, "button"=>"", "id"=>"18"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+Unpermitted parameters: :tracking_number, :phone_number, :comments
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ? AND "devices"."id" IN (9, 10)[0m  [["buy_back_id", 18]]
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "buy_backs" SET "company" = ?, "updated_at" = ? WHERE "buy_backs"."id" = ?[0m  [["company", "MobileSource"], ["updated_at", "2019-01-22 20:23:15.516085"], ["id", 18]]
+  [1m[35m (94.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/18
+Completed 302 Found in 126ms (ActiveRecord: 96.1ms)
+
+
+Started GET "/buy_backs/18" for 127.0.0.1 at 2019-01-22 15:23:15 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 18]]
+  Rendered buy_backs/show.html.erb within layouts/application (181.1ms)
+Completed 200 OK in 554ms (Views: 491.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-22 15:23:27 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 357ms (Views: 306.1ms | ActiveRecord: 1.0ms)
+
+

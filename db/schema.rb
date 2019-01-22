@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190122173239) do
+ActiveRecord::Schema.define(version: 20190122201841) do
 
   create_table "buy_backs", force: :cascade do |t|
     t.string "first_name"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20190122173239) do
     t.date "received_date"
     t.date "paid_date"
     t.string "phone_number"
+    t.string "company"
   end
 
   create_table "buy_backs_devices", force: :cascade do |t|
