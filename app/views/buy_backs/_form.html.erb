@@ -1,4 +1,4 @@
-<div clas= "row">
+<div class= "row">
 <%= form_with(model: buy_back, local: true) do |form| %>
   <% if buy_back.errors.any? %>
     <div id="error_explanation">
@@ -9,7 +9,7 @@
       <% end %>
       </ul>
       </div>
-  <% end %>
+      <% end %>
           <div class="control-group">
             <%= form.label :company, class: 'control-label' %>
             <div class="controls">
@@ -82,7 +82,7 @@
              <%= form.text_area :comments, size: "23x3" %>
           </div>
           </div>
-        </div>
+
 
   <hr>
   <div class="container">
