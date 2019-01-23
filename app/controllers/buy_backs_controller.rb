@@ -69,6 +69,6 @@ class BuyBacksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def buy_back_params
-      params.require(:buy_back).permit(:remove_image, :first_name, :middle_name, :last_name, :address, :address_two, :city, :state, :zip_code, :email, :image, :company, :drive_license,carriers_attributes:[:carrier], devices_attributes:[:id, :quantity, :device_name, :comments, :carrier, :imei, :price, :_destroy])
+      params.require(:buy_back).permit(:remove_image, :status, :puchase_number, :customer_address, :received_date, :paid_date,:first_name, :middle_name, :last_name, :address, :address_two, :city, :state, :zip_code, :email, :image, :company, :drive_license,carriers_attributes:[:carrier], devices_attributes:[:id, :quantity, :device_name, :comments, :carrier, :imei, :price, :_destroy])
     end
 end
