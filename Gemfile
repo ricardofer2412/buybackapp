@@ -56,7 +56,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'carrierwave', '~> 1.0'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem 'bootstrap'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'nested_form_fields'
-
