@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>MOBILESOURCE</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all',
                                             'data-turbolinks-track': 'reload' %>
@@ -12,22 +12,15 @@
   <![endif]-->
 </head>
   <body>
-    
     <div class="container">
       <ul class="nav nav-tabs">
-        <li><%= link_to "Home", buy_backs_path %></a></li>
-       <li><%= link_to "Purchase Order", buy_backs_path %></li>
-      <li><%= link_to "Devices", devices_path %></li>
+        <li><%= link_to "Home", buy_backs_path %></li>
+        <li><%= link_to "Purchase Order", buy_backs_path %></li>
+        <li><%= link_to "Devices", devices_path %></li>
      </ul>
     </div>
-
-
-
-      <div class='container'>
-          <%= yield %>
-        </div>
-      </body>
-      </html>
-
-
+    <div class='container'>
+      <%= yield %>
+    </div>
+  </body>
 </html>
