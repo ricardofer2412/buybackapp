@@ -122,14 +122,9 @@
       </div>
         <hr>
       </div>
-      </td>
       </div>
-
   <hr>
-
   <% end %>
-
-
   <hr>
   <div>
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
@@ -149,7 +144,6 @@
         <div class="col">
           <%= form.label "Upload ID"%>
           <%= form.file_field :image %>
-
           <% if @buy_back.image? %>
           <%= image_tag @buy_back.image.url, class: "id-show" %>
             <%= form.check_box :remove_image %>
@@ -168,6 +162,5 @@
     </div>
     <div class="form-group">
     <% end %>
-</form>
 </div>
 <div>
