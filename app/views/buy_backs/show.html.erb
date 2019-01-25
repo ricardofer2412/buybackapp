@@ -20,31 +20,10 @@
   <strong>Last name:</strong>
   <%= @buy_back.last_name %>
 </p>
-
 <p>
-  <strong>Address:</strong>
-  <%= @buy_back.address %>
-</p>
-
-<p>
-  <strong>Address #2 </strong>
-  <%= @buy_back.address_two %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @buy_back.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @buy_back.state %>
-</p>
-
-<p>
-  <strong>Zip Code:</strong>
-  <%= @buy_back.zip_code %>
-</p>
+  <strong>Address </strong>
+  <%= @buy_back.customer_address %>
+  </p>
 
 <p>
   <strong>Email:</strong>
@@ -56,6 +35,10 @@
   <%= @buy_back.drive_license %>
 </p>
 
+<p>
+  <strong>Comments</strong>
+  <%= @buy_back.comments %>
+</p>
 <% if @buy_back.image? %>
 <%= image_tag @buy_back.image.url, class: "id-show" %>
 <% end %>

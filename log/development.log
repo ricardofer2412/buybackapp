@@ -14508,3 +14508,22 @@ Processing by BuyBacksController#show as HTML
 Completed 200 OK in 860ms (Views: 774.4ms | ActiveRecord: 6.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-25 17:44:52 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 4971ms (Views: 4842.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/22" for 127.0.0.1 at 2019-01-25 17:47:49 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mBuyBack Load (145.9ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  Rendered buy_backs/show.html.erb within layouts/application (449.4ms)
+Completed 200 OK in 1122ms (Views: 871.5ms | ActiveRecord: 147.9ms)
+
+
