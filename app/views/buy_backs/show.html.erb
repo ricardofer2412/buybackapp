@@ -1,47 +1,62 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
 <!--Author      : @arboshiki-->
-<p>
-  <strong>PO #:</strong>
-  <%= @buy_back.purchase_number %>
-</p>
-<p>
-  <strong>Company:</strong>
-  <%= @buy_back.company %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="form-group">
+          <strong>Company:</strong>
+          <%= @buy_back.company %>
+        </div>
+        <div class="form-group">
+        <strong>PO#:</strong>
+        <%= @buy_back.purchase_number %>
+      </div>
+      <div class="form-group">
+        <strong>Company:</strong>
+        <%= @buy_back.company %>
+      </div>
+      <div class="form-group">
+        <strong>Date:</strong>
+        <%= @buy_back.received_date %>
+      </div>
+      </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @buy_back.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @buy_back.last_name %>
-</p>
-<p>
-  <strong>Address </strong>
-  <%= @buy_back.customer_address %>
-  </p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @buy_back.email %>
-</p>
-
-<p>
-  <strong>Driver's License</strong>
-  <%= @buy_back.drive_license %>
-</p>
-
-<p>
-  <strong>Comments</strong>
-  <%= @buy_back.comments %>
-</p>
+      <div class="col-lg-4">
+      <div class="form-group">
+        <strong>First name:</strong>
+        <%= @buy_back.first_name %>
+      </div>
+      <div class="form-group">
+        <strong>Last name:</strong>
+        <%= @buy_back.last_name %>
+      </div>
+      <div class="form-group">
+        <strong>Address </strong>
+        <%= @buy_back.customer_address %>
+      </div>
+      <div class="form-group">
+        <strong>Email:</strong>
+        <%= @buy_back.email %>
+      </div>
+      <div class="form-group">
+        <strong>Driver's License</strong>
+        <%= @buy_back.drive_license %>
+        </div>
+        </div>
+            <div class="col-lg-4">
+          <div class="form-group">
+          <strong>Comments</strong>
+          <%= @buy_back.comments %>
+          </div>
+          </div>
+        </div>
+</div>
+<div class="container">
 <% if @buy_back.image? %>
 <%= image_tag @buy_back.image.url, :size => "260x180" %>
 <% end %>
@@ -50,7 +65,6 @@
 <table class="table">
  <thead class="thead-dark">
 <tr>
-
   <th> Qty </th>
   <th> Carrier </th>
   <th> Model </th>
@@ -78,8 +92,10 @@
     <% end %>
 </tbody>
 </table>
-
+</div>
+<div class="container">
 <h4 class="pull-right"> Total: <%=  number_to_currency(running_total) %> </h4>
 
 <%= link_to 'Edit', edit_buy_back_path(@buy_back) %> |
 <%= link_to 'Back', buy_backs_path %>
+</div>

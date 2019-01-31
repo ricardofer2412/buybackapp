@@ -15151,3 +15151,148 @@ Processing by BuyBacksController#show as HTML
 Completed 200 OK in 525ms (Views: 471.1ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-31 14:35:23 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (43.2ms)
+Completed 500 Internal Server Error in 3036ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (The asset "mobile.css" is not present in the asset pipeline.):
+     5:    <%= csrf_meta_tags %>
+     6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     8:     <%= stylesheet_link_tag 'mobile', :media => 'only screen and (max-device-width: 1024px)' %>
+     9: </head>
+    10: <body>
+    11:   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___173578708_59235396'
+Started GET "/" for 127.0.0.1 at 2019-01-31 14:36:44 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 525ms (Views: 471.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/22/edit" for 127.0.0.1 at 2019-01-31 14:37:46 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  Rendered buy_backs/_form.html.erb (192.9ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (242.3ms)
+Completed 200 OK in 764ms (Views: 701.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-31 14:51:10 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 471ms (Views: 422.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-01-31 14:51:14 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 555ms (Views: 503.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/23" for 127.0.0.1 at 2019-01-31 14:51:17 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 23]]
+  Rendered buy_backs/show.html.erb within layouts/application (59.9ms)
+Completed 200 OK in 550ms (Views: 496.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/23" for 127.0.0.1 at 2019-01-31 14:52:31 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 23]]
+  Rendered buy_backs/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 532ms (Views: 477.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-31 14:52:46 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 454ms (Views: 405.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-31 14:52:49 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 488ms (Views: 436.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-31 14:52:50 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 460ms (Views: 408.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/22" for 127.0.0.1 at 2019-01-31 14:52:53 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  Rendered buy_backs/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 447ms (Views: 395.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/22" for 127.0.0.1 at 2019-01-31 14:53:07 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  Rendered buy_backs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 504ms (Views: 449.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-31 14:53:09 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 504ms (Views: 449.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/22" for 127.0.0.1 at 2019-01-31 14:53:10 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  Rendered buy_backs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 477ms (Views: 420.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-01-31 14:53:11 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT "buy_backs".* FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 498ms (Views: 448.5ms | ActiveRecord: 0.0ms)
+
+
