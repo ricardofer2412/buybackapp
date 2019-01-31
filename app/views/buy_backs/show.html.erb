@@ -43,7 +43,7 @@
   <%= @buy_back.comments %>
 </p>
 <% if @buy_back.image? %>
-<%= image_tag @buy_back.image.url, class: "id-show" %>
+<%= image_tag @buy_back.image.url, :size => "260x180" %>
 <% end %>
 
 <h3> Devices </h3>

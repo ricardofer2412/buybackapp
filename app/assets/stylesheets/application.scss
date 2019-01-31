@@ -1,10 +1,12 @@
 @import 'bootstrap';
-@import 'bootstrap-sprockets';
-
-
 
 .full-width {
   margin-left: -5px;
   position: relative;
 
+}
+
+#id-show {
+  height: 20px;
+  width: 20px;
 }
