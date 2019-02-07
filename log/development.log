@@ -15911,3 +15911,147 @@ Processing by BuyBacksController#edit as HTML
 Completed 200 OK in 748ms (Views: 692.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/buy_backs/24/edit" for 127.0.0.1 at 2019-02-07 16:04:04 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 24]]
+  Rendered buy_backs/_form.html.erb (167.9ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (218.9ms)
+Completed 200 OK in 2204ms (Views: 2071.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/buy_backs/24/edit" for 127.0.0.1 at 2019-02-07 16:04:21 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 24]]
+  Rendered buy_backs/_form.html.erb (9.0ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 988ms (Views: 928.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/24/edit" for 127.0.0.1 at 2019-02-07 16:05:31 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 24]]
+  Rendered buy_backs/_form.html.erb (8.5ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 2408ms (Views: 2352.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 16:05:37 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (15.6ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 652ms (Views: 586.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 16:17:16 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 4402ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: twitter/bootstrap/bootstrap.
+Load paths:
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/config
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/images
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/vendor/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nested_form_fields-0.8.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/node_modules
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/images
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets):
+    3: <head>
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___720820012_104968152'
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 16:17:41 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 1851ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: twitter/bootstrap/bootstrap.
+Load paths:
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/config
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/images
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/bundler/gems/twitter-bootstrap-rails-98e3c2aabfbe/vendor/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nested_form_fields-0.8.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/node_modules
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/images
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets):
+    3: <head>
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+  
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___720820012_103575264'
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 16:18:05 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 5864ms (Views: 5816.2ms | ActiveRecord: 1.0ms)
+
+
