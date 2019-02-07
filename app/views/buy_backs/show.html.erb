@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      
+
         <div class="form-group">
         <strong>PO#:</strong>
         <%= @buy_back.purchase_number %>
@@ -36,6 +36,12 @@
         <strong>Address </strong>
         <%= @buy_back.customer_address %>
       </div>
+      <div class="col-lg-4">
+    <div class="form-group">
+    <strong>Phone Number:</strong>
+    <%= @buy_back.phone_number %>
+    </div>
+    </div>
       <div class="form-group">
         <strong>Email:</strong>
         <%= @buy_back.email %>

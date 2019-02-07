@@ -3,8 +3,10 @@ class BuyBacksController < ApplicationController
 
   # GET /buy_backs
   # GET /buy_backs.json
+
+  helper_method :sort_column, :sort_direction
   def index
-    @buy_backs = BuyBack.all
+    @buy_backs = BuyBack.order(sort_column + " " + sort_direction)
   end
 
   # GET /buy_backs/1
@@ -71,4 +73,12 @@ class BuyBacksController < ApplicationController
     def buy_back_params
       params.require(:buy_back).permit(:remove_image,:comments, :status, :purchase_number, :customer_address, :received_date, :paid_date,:first_name, :phone_number, :middle_name, :last_name, :address, :address_two, :city, :state, :zip_code, :email, :image, :company, :drive_license,carriers_attributes:[:carrier], devices_attributes:[:id, :quantity, :device_name, :comments, :carrier, :imei, :price, :_destroy])
     end
+
+    def sort_column
+      params[:sort] || "updated_at"
+    end
+    def sort_direction
+      params[:direction] || "asc"
+    end
+
 end

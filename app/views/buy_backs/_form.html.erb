@@ -127,7 +127,7 @@
           <%= form.label "Upload ID"%>
           <%= form.file_field :image %>
           <% if @buy_back.image? %>
-          <%= image_tag @buy_back.image.url, class: "id-show" %>
+          <%= image_tag @buy_back.image.url, :size => "260x180" %>
             <%= form.check_box :remove_image %>
             remove image
             <% end %>
