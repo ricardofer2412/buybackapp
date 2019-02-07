@@ -15517,3 +15517,323 @@ Processing by BuyBacksController#index as HTML
 Completed 200 OK in 513ms (Views: 456.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:07:23 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/buy_backs_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:07:26 -0500
+Processing by BuyBacksController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/buy_backs_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:10:20 -0500
+Processing by BuyBacksController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/buy_backs_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:10:52 -0500
+Processing by BuyBacksController#index as HTML
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/buy_backs_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:13:54 -0500
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/controllers/buy_backs_controller.rb:10: syntax error, unexpected keyword_end, expecting ')'
+  end
+     ^
+C:/Users/Support/Desktop/rails/buybackapp/app/controllers/buy_backs_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/buy_backs_controller.rb:10: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/buy_backs_controller.rb:84: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:14:32 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 1803ms (Views: 1731.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:15:06 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  Rendered buy_backs/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 632ms (Views: 567.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-07 13:19:52 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  Rendered buy_backs/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 1716ms (Views: 1610.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-07 13:20:08 -0500
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-07 13:20:08 -0500
+Processing by BuyBacksController#new as HTML
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (187.4ms)
+  Rendered buy_backs/_form.html.erb (180.4ms)
+  Rendered buy_backs/new.html.erb within layouts/application (290.4ms)
+  Rendered buy_backs/new.html.erb within layouts/application (239.4ms)
+Completed 500 Internal Server Error in 1091ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+   10: <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___852574373_58598112'
+Completed 200 OK in 1319ms (Views: 1217.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-07 13:20:16 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (130.4ms)
+Completed 200 OK in 5373ms (Views: 4438.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:26 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ccfn+ep3QrQqmYwbEU7mlR0jWPprBISeeLYH5BkscX0RU3Etnfpf4DEnTGv28Z1aj18GASiV/73GwSMtyLepmA==", "buy_back"=>{"company"=>"Material Handling Systems", "purchase_number"=>"", "received_date"=>"", "first_name"=>"", "last_name"=>"", "customer_address"=>"2741 NE 4th Ave", "email"=>"", "tracking_number"=>"", "phone_number"=>"9549211171", "status"=>"", "comments"=>"", "drive_license"=>""}, "button"=>""}
+Unpermitted parameter: :tracking_number
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "last_name", "email", "drive_license", "created_at", "updated_at", "status", "comments", "phone_number", "company", "purchase_number", "customer_address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["drive_license", ""], ["created_at", "2019-02-07 18:20:26.883320"], ["updated_at", "2019-02-07 18:20:26.883320"], ["status", ""], ["comments", ""], ["phone_number", "9549211171"], ["company", "Material Handling Systems"], ["purchase_number", ""], ["customer_address", "2741 NE 4th Ave"]]
+  [1m[35m (50.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/27
+Completed 302 Found in 74ms (ActiveRecord: 63.0ms)
+
+
+Started GET "/buy_backs/27" for 127.0.0.1 at 2019-02-07 13:20:26 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 27]]
+  Rendered buy_backs/show.html.erb within layouts/application (81.2ms)
+Completed 200 OK in 791ms (Views: 631.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:31 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (3.5ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  Rendered buy_backs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 540ms (Views: 483.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-07 13:20:33 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (10.1ms)
+  Rendered buy_backs/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 637ms (Views: 582.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:36 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQlm2AqF/TAnrmOClVbJ6twvN35AzBa0IzVTLrwNQtc1nfAMfQjgZDwQo/Jy6bIlTlNphQNdbZedQnfnbZaaMg==", "buy_back"=>{"company"=>"Material Handling Systems", "purchase_number"=>"", "received_date"=>"", "first_name"=>"", "last_name"=>"", "customer_address"=>"2741 NE 4th Ave", "email"=>"", "tracking_number"=>"", "phone_number"=>"9549211171", "status"=>"", "comments"=>"", "drive_license"=>""}, "button"=>""}
+Unpermitted parameter: :tracking_number
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "last_name", "email", "drive_license", "created_at", "updated_at", "status", "comments", "phone_number", "company", "purchase_number", "customer_address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["drive_license", ""], ["created_at", "2019-02-07 18:20:36.589476"], ["updated_at", "2019-02-07 18:20:36.589476"], ["status", ""], ["comments", ""], ["phone_number", "9549211171"], ["company", "Material Handling Systems"], ["purchase_number", ""], ["customer_address", "2741 NE 4th Ave"]]
+  [1m[35m (63.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/28
+Completed 302 Found in 77ms (ActiveRecord: 65.0ms)
+
+
+Started GET "/buy_backs/28" for 127.0.0.1 at 2019-02-07 13:20:36 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mBuyBack Load (2.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 28]]
+  Rendered buy_backs/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 633ms (Views: 565.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:39 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 534ms (Views: 482.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-07 13:20:43 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 603ms (Views: 550.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:47 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2x3d5IQdsb9K3ob55s5t2/8movtHxcrhr61E8sw2cGO7iUsw85Cs61FgRokBcRYUbVr8AARUscIR2mA7Ha2ohg==", "buy_back"=>{"company"=>"Material Handling Systems", "purchase_number"=>"", "received_date"=>"", "first_name"=>"", "last_name"=>"", "customer_address"=>"2741 NE 4th Ave", "email"=>"", "tracking_number"=>"", "phone_number"=>"9549211171", "status"=>"", "comments"=>"", "drive_license"=>""}, "button"=>""}
+Unpermitted parameter: :tracking_number
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "last_name", "email", "drive_license", "created_at", "updated_at", "status", "comments", "phone_number", "company", "purchase_number", "customer_address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["drive_license", ""], ["created_at", "2019-02-07 18:20:47.174099"], ["updated_at", "2019-02-07 18:20:47.174099"], ["status", ""], ["comments", ""], ["phone_number", "9549211171"], ["company", "Material Handling Systems"], ["purchase_number", ""], ["customer_address", "2741 NE 4th Ave"]]
+  [1m[35m (79.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/29
+Completed 302 Found in 91ms (ActiveRecord: 82.0ms)
+
+
+Started GET "/buy_backs/29" for 127.0.0.1 at 2019-02-07 13:20:47 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 29]]
+  Rendered buy_backs/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 658ms (Views: 596.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-07 13:20:49 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 543ms (Views: 490.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?page=2" for 127.0.0.1 at 2019-02-07 13:20:52 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 7]]
+  Rendered buy_backs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 490ms (Views: 436.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:20:54 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 512ms (Views: 457.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:22:12 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  Rendered buy_backs/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/index.html.erb:42: syntax error, unexpected ')', expecting keyword_end
+...te::ActionView::LinkRenderer) );@output_buffer.safe_append='
+...                               ^):
+  
+app/views/buy_backs/index.html.erb:42: syntax error, unexpected ')', expecting keyword_end
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:22:37 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  Rendered buy_backs/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/index.html.erb:42: syntax error, unexpected ')', expecting keyword_end
+...ate::ActionView::LinkRenderer));@output_buffer.safe_append='
+...                               ^):
+  
+app/views/buy_backs/index.html.erb:42: syntax error, unexpected ')', expecting keyword_end
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:22:54 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 548ms (Views: 496.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:23:14 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 536ms (Views: 485.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:23:17 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 507ms (Views: 456.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:23:47 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 5880ms (Views: 5829.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:28:06 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 24156ms (Views: 24058.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/buy_backs?page=1" for 127.0.0.1 at 2019-02-07 13:29:20 -0500
+Processing by BuyBacksController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 5370ms (Views: 5317.0ms | ActiveRecord: 2.0ms)
+
+

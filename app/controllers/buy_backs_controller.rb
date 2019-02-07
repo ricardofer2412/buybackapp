@@ -6,7 +6,7 @@ class BuyBacksController < ApplicationController
 
   helper_method :sort_column, :sort_direction
   def index
-    @buy_backs = BuyBack.order(sort_column + " " + sort_direction)
+    @buy_backs = BuyBack.order(sort_column + " " + sort_direction).paginate(page: params[:page], per_page: 7)
   end
 
   # GET /buy_backs/1
