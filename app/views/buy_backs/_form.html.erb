@@ -72,6 +72,7 @@
      </div>
    </div>
  </div>
+
 <%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
   <div class="form-group" id="devices-form">
     <div class="row">
@@ -99,7 +100,6 @@
         <strong>Comments</strong>
         <%= new.text_area :comments%><%= new.remove_nested_fields_link %>  <br>
       </div>
-        <hr>
       </div>
       </div>
   <hr>
