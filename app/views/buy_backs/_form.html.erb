@@ -66,46 +66,45 @@
           </div>
   <hr>
   <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-       <%= form.add_nested_fields_link :devices, 'Add More Devices', class: 'btn btn-warning' %><br><hr>
-    </div>
-  </div>
-</div>
-
+   <div class="row">
+     <div class="col-xs-12">
+        <%= form.add_nested_fields_link :devices, 'Add More Devices', class: 'btn btn-warning' %><br><hr>
+     </div>
+   </div>
+ </div>
 <%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
-
-  <div class="container">
+  <div class="form-group" id="devices-form">
     <div class="row">
-      <div class="form-group">
-      <strong>Qty: </strong><br>
-        <%= new.text_field :quantity %><%= new.remove_nested_fields_link %>
+      <div class="col-xs-3"
+      <strong>Qty</strong>
+      <%= new.text_field :quantity %><%= new.remove_nested_fields_link %><br>
       </div>
-      <div class="form-group">
-        <strong>Carrier: </strong><br>
-      <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %><%= new.remove_nested_fields_link %>
+      <div class="col-xs-3"
+        <strong>Carrier</strong>
+      <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %><%= new.remove_nested_fields_link %> <br>
       </div>
-      <div class="form-group">
-        <strong>Model: </strong><br>
-        <%= new.text_field :device_name%> <%= new.remove_nested_fields_link %>
+      <div class="col-xs-3">
+        <strong>Model</strong>
+        <%= new.text_field :device_name%> <%= new.remove_nested_fields_link %>  <br>
       </div>
-      <div class="form-group">
-        <strong>IMEI: </strong><br>
-         <%= new.text_field :imei %><%= new.remove_nested_fields_link %>
-         </div>
-       <div class="form-group">
-        <strong>Price: </strong><br>
-        <%= new.text_field :price%> <%= new.remove_nested_fields_link %>
+      <div class="col-xs-3">
+        <strong>IMEI</strong>
+         <%= new.text_field :imei %><%= new.remove_nested_fields_link %><br>
+       </div>
+       <div class="col-xs-3">
+        <strong>Price </strong>
+        <%= new.text_field :price%> <%= new.remove_nested_fields_link %> <br>
       </div>
-      <div class="form-group">
-        <strong>Comments: </strong><br>
-        <%= new.text_area :comments%><%= new.remove_nested_fields_link %>
+      <div class="col-xs-3">
+        <strong>Comments</strong>
+        <%= new.text_area :comments%><%= new.remove_nested_fields_link %>  <br>
       </div>
-        </div>
-        </div>
-
-      <hr>
+        <hr>
+      </div>
+      </div>
+  <hr>
   <% end %>
+  <hr>
   <div class="container">
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
     </p>
