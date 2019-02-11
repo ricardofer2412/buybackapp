@@ -16159,3 +16159,33 @@ Processing by BuyBacksController#new as HTML
 Completed 200 OK in 745ms (Views: 692.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:37:01 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 1958ms (Views: 1854.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:37:17 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 719ms (Views: 668.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/28/edit" for 127.0.0.1 at 2019-02-11 11:37:21 -0500
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 28]]
+  Rendered buy_backs/_form.html.erb (197.0ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (246.9ms)
+Completed 200 OK in 985ms (Views: 906.9ms | ActiveRecord: 1.0ms)
+
+
