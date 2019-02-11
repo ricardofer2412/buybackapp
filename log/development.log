@@ -16216,3 +16216,279 @@ Processing by BuyBacksController#new as HTML
 Completed 200 OK in 890ms (Views: 838.1ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-11 11:52:46 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 2367ms (Views: 2270.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:05 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (92.1ms)
+  Rendered buy_backs/new.html.erb within layouts/application (159.1ms)
+Completed 500 Internal Server Error in 496ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_92405808'
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:07 -0500
+Processing by BuyBacksController#new as HTML
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:08 -0500
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:08 -0500
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:10 -0500
+Processing by BuyBacksController#new as HTML
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+Processing by BuyBacksController#new as HTML
+  Rendered buy_backs/_form.html.erb (2.0ms)
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/new.html.erb within layouts/application (1525.9ms)
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (2.0ms)
+Completed 500 Internal Server Error in 6688ms (ActiveRecord: 0.0ms)
+
+
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/new.html.erb within layouts/application (1237.6ms)
+  Rendered buy_backs/_form.html.erb (1.0ms)
+  
+Completed 500 Internal Server Error in 4879ms (ActiveRecord: 0.0ms)
+
+
+  Rendered buy_backs/new.html.erb within layouts/application (1053.4ms)
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+  Rendered buy_backs/_form.html.erb (2.0ms)
+  
+Completed 500 Internal Server Error in 5695ms (ActiveRecord: 0.0ms)
+
+
+  
+  Rendered buy_backs/new.html.erb within layouts/application (1840.9ms)
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_96562620'
+Completed 500 Internal Server Error in 7021ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_98016276'
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:53:20 -0500
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_98016276'
+  
+Processing by BuyBacksController#new as HTML
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_98016276'
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (2.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Support/Desktop/rails/buybackapp/app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/buy_backs/_form.html.erb:146: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/buy_backs/_form.html.erb:148: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/buy_backs/new.html.erb:3:in `_app_views_buy_backs_new_html_erb__466291565_67018440'
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:08 -0500
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:09 -0500
+Processing by BuyBacksController#new as HTML
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:16 -0500
+  Rendering buy_backs/new.html.erb within layouts/application
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:16 -0500
+Processing by BuyBacksController#new as HTML
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendering buy_backs/new.html.erb within layouts/application
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:21 -0500
+  Rendered buy_backs/_form.html.erb (150.4ms)
+Processing by BuyBacksController#new as HTML
+  Rendered buy_backs/_form.html.erb (219.3ms)
+  Rendered buy_backs/_form.html.erb (2983.7ms)
+  Rendered buy_backs/_form.html.erb (4042.2ms)
+  Rendered buy_backs/new.html.erb within layouts/application (213.4ms)
+  Rendered buy_backs/new.html.erb within layouts/application (345.3ms)
+  Rendered buy_backs/new.html.erb within layouts/application (3963.2ms)
+  Rendered buy_backs/new.html.erb within layouts/application (5114.7ms)
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (258.9ms)
+Completed 200 OK in 4077ms (Views: 3879.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:23 -0500
+Completed 200 OK in 5055ms (Views: 4116.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 9940ms (Views: 8920.6ms | ActiveRecord: 12.0ms)
+
+
+Processing by BuyBacksController#new as HTML
+Completed 500 Internal Server Error in 11786ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:23 -0500
+  
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:24 -0500
+Processing by BuyBacksController#new as HTML
+ActionView::Template::Error (can't add a new key into hash during iteration):
+  Rendering buy_backs/new.html.erb within layouts/application
+Processing by BuyBacksController#new as HTML
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+   10: <body>
+Completed 200 OK in 3246ms (Views: 3189.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/new.html.erb within layouts/application (628.5ms)
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___327862684_54010380'
+  Rendering buy_backs/new.html.erb within layouts/application
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:25 -0500
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/_form.html.erb (3.0ms)
+Processing by BuyBacksController#new as HTML
+  Rendered buy_backs/new.html.erb within layouts/application (373.8ms)
+  Rendered buy_backs/new.html.erb within layouts/application (276.8ms)
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (229.9ms)
+Completed 200 OK in 3814ms (Views: 3741.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:27 -0500
+Completed 200 OK in 3229ms (Views: 3161.9ms | ActiveRecord: 0.0ms)
+
+
+Processing by BuyBacksController#new as HTML
+Completed 500 Internal Server Error in 3203ms (ActiveRecord: 0.0ms)
+
+
+  
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:28 -0500
+ActionView::Template::Error (can't add a new key into hash during iteration):
+Processing by BuyBacksController#new as HTML
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+   10: <body>
+  Rendering buy_backs/new.html.erb within layouts/application
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___327862684_92558112'
+  Rendered buy_backs/_form.html.erb (63.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (441.7ms)
+  Rendering buy_backs/new.html.erb within layouts/application
+Completed 200 OK in 3511ms (Views: 3422.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (129.9ms)
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:29 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (11.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (134.9ms)
+Completed 200 OK in 3072ms (Views: 2997.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2540ms (Views: 2472.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:31 -0500
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:31 -0500
+Processing by BuyBacksController#new as HTML
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+Completed 200 OK in 7527ms (Views: 7368.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendered buy_backs/new.html.erb within layouts/application (1256.3ms)
+  Rendered buy_backs/_form.html.erb (3.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (2999.2ms)
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-11 11:54:40 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (1002.4ms)
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:46 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (128.9ms)
+Completed 200 OK in 14646ms (Views: 14582.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 14603ms (Views: 14329.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 11:54:47 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (1195.3ms)
+Completed 200 OK in 11285ms (Views: 10246.8ms | ActiveRecord: 2.0ms)
+
+
+Completed 200 OK in 13325ms (Views: 13217.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 12055ms (Views: 11884.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-11 12:03:30 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 671ms (Views: 612.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-11 12:03:33 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 726ms (Views: 677.4ms | ActiveRecord: 0.0ms)
+
+
