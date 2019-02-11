@@ -22,22 +22,22 @@
             <%= form.text_field :purchase_number, id: :buy_back_purchase_number %>
             </div>
             <div class="form-group">
-            <label><strong>Received Date</strong></label><br>
+            <label><strong>Received Date:</strong></label><br>
             <%= form.date_field :received_date %>
             </div>
             </div>
             <div class="col-lg-4">
               <div class="form-group">
-              <label><strong>First Name</strong></label><br>
+              <label><strong>First Name:</strong></label><br>
               <%= form.text_field :first_name, id: :buy_back_first_name %>
               </div>
               <div class="form-group">
-               <label><strong>Last Name</strong></label><br>
+               <label><strong>Last Name:</strong></label><br>
               <%= form.text_field :last_name, id: :buy_back_last_name %>
               </div>
               <div class="form-group">
               <label><strong>Address:</strong></label><br>
-              <%= form.text_area :customer_address, size: "23x5" %>
+              <%= form.text_area :customer_address, size: "23x3" %>
               </div>
               <div class="form-group">
             <label><strong>E-Mail:</strong></label><br>
@@ -58,7 +58,7 @@
             <%= form.select :status, ["","Quoted","Received", "Tested", "Entered", "Revised", "Paid"] %>
             </div>
               <div class="form-group">
-            <%= form.label :comments, class: 'control-label' %><br>
+            <label><strong>Comments:</strong></label><br>
              <%= form.text_area :comments, size: "23x3" %>
             </div>
             </div>
@@ -73,7 +73,7 @@
   </div>
 </div>
 
-  <%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
+<%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
 <table class="table table-hover">
   <div class="container">
     <div class="row">
@@ -101,29 +101,27 @@
         <strong>Comments</strong><br>
         <%= new.text_area :comments%><%= new.remove_nested_fields_link %>
       </div>
-      </div>
-      </div>
-      </table>
-
-  <hr>
+        </div>
+        </div>
+        </table>
+      <hr>
   <% end %>
-  <hr>
-  <div>
+  <div class="container">
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
-      </p>
-      <input type="checkbox">
+    </p>
+    <input type="checkbox">
     </div>
-    <div class="form-group">
+
+
+    <div class="container">
       <div class="row">
-        <div class="col">
-    <%= form.label "Driver's License" %>
-    </div>
-        <div class="col">
-    <%= form.text_field :drive_license, id: :buy_back_drive_license %>
-    </div>
-    <div class="form-group">
+        <div class="col-sm-6">
+        <%= form.label "Driver's License" %>
+        <%= form.text_field :drive_license, id: :buy_back_drive_license %>
+      </div>
+      </div>
       <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
           <%= form.label "Upload ID"%>
           <%= form.file_field :image %>
           <% if @buy_back.image? %>
@@ -131,17 +129,15 @@
             <%= form.check_box :remove_image %>
             remove image
             <% end %>
-          </div>
-          </div>
-          </div>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <div class="row">
-        <div class="col">
+<hr>
+    <div class="container">
+      <div class="form-group">
       <%= form.button :submit, class: 'btn btn-danger' %>
       </div>
       </div>
-    </div>
     <div class="form-group">
     <% end %>
 </div>
