@@ -22,17 +22,17 @@
             <%= form.text_field :purchase_number, id: :buy_back_purchase_number %>
             </div>
             <div class="form-group">
-            <label><strong>Received Date</strong></label><br>
+            <label><strong>Received Date:</strong></label><br>
             <%= form.date_field :received_date %>
             </div>
             </div>
             <div class="col-lg-4">
               <div class="form-group">
-              <label><strong>First Name</strong></label><br>
+              <label><strong>First Name:</strong></label><br>
               <%= form.text_field :first_name, id: :buy_back_first_name %>
               </div>
               <div class="form-group">
-               <label><strong>Last Name</strong></label><br>
+               <label><strong>Last Name:</strong></label><br>
               <%= form.text_field :last_name, id: :buy_back_last_name %>
               </div>
               <div class="form-group">
@@ -71,7 +71,6 @@
        <%= form.add_nested_fields_link :devices, 'Add More Devices', class: 'btn btn-warning' %><br><hr>
     </div>
   </div>
-</div>
 
   <%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
 
@@ -103,11 +102,12 @@
       </div>
       </div>
       </div>
-    
+
 
   <hr>
   <% end %>
-  <hr>
+
+  </div>
   <div>
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
       </p>
