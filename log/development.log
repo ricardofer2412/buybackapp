@@ -16870,3 +16870,38 @@ Processing by BuyBacksController#new as HTML
 Completed 200 OK in 941ms (Views: 885.6ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-18 17:17:35 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (164.2ms)
+  Rendered buy_backs/new.html.erb within layouts/application (217.0ms)
+Completed 200 OK in 2540ms (Views: 2421.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-18 17:17:52 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 829ms (Views: 752.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-02-18 17:19:03 -0500
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 731ms (Views: 681.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-18 17:19:06 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (6.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 772ms (Views: 721.4ms | ActiveRecord: 0.0ms)
+
+
