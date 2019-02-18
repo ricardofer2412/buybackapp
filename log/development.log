@@ -16905,3 +16905,56 @@ Processing by BuyBacksController#new as HTML
 Completed 200 OK in 772ms (Views: 721.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-18 17:27:05 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 835ms (Views: 779.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-02-18 17:27:38 -0500
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (5.0ms)
+  Rendered buy_backs/new.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 796ms (Views: 742.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/buy_backs" for 127.0.0.1 at 2019-02-18 17:27:52 -0500
+Processing by BuyBacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zwh42S/jZPW92JWggYu2RKNl1IIMFJksQDpMgkYvTPRC+bjGWL/2tdPuyngiqhTzC0kzXsi7LyE+qgip8Y3lPw==", "buy_back"=>{"company"=>"", "purchase_number"=>"", "received_date"=>"", "first_name"=>"", "last_name"=>"", "customer_address"=>"", "email"=>"", "tracking_number"=>"", "phone_number"=>"", "status"=>"", "comments"=>"", "devices_attributes"=>{"0"=>{"quantity"=>"1", "carrier"=>"", "device_name"=>"", "imei"=>"", "price"=>"", "comments"=>""}, "1"=>{"quantity"=>"", "carrier"=>"", "device_name"=>"", "imei"=>"", "price"=>"", "comments"=>""}, "2"=>{"quantity"=>"", "carrier"=>"", "device_name"=>"", "imei"=>"", "price"=>"", "comments"=>""}, "3"=>{"quantity"=>"", "carrier"=>"", "device_name"=>"", "imei"=>"", "price"=>"", "comments"=>""}}, "drive_license"=>""}, "button"=>""}
+Unpermitted parameter: :tracking_number
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (24.0ms)[0m  [1m[32mINSERT INTO "buy_backs" ("first_name", "last_name", "email", "drive_license", "created_at", "updated_at", "status", "comments", "phone_number", "company", "purchase_number", "customer_address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["drive_license", ""], ["created_at", "2019-02-18 22:27:53.085769"], ["updated_at", "2019-02-18 22:27:53.085769"], ["status", ""], ["comments", ""], ["phone_number", ""], ["company", ""], ["purchase_number", ""], ["customer_address", ""]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("quantity", "carrier", "imei", "created_at", "updated_at", "device_name", "buy_back_id", "comments") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["quantity", 1], ["carrier", ""], ["imei", ""], ["created_at", "2019-02-18 22:27:53.112753"], ["updated_at", "2019-02-18 22:27:53.112753"], ["device_name", ""], ["buy_back_id", 31], ["comments", ""]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("carrier", "imei", "created_at", "updated_at", "device_name", "buy_back_id", "comments") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["carrier", ""], ["imei", ""], ["created_at", "2019-02-18 22:27:53.115751"], ["updated_at", "2019-02-18 22:27:53.115751"], ["device_name", ""], ["buy_back_id", 31], ["comments", ""]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("carrier", "imei", "created_at", "updated_at", "device_name", "buy_back_id", "comments") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["carrier", ""], ["imei", ""], ["created_at", "2019-02-18 22:27:53.118749"], ["updated_at", "2019-02-18 22:27:53.118749"], ["device_name", ""], ["buy_back_id", 31], ["comments", ""]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "devices" ("carrier", "imei", "created_at", "updated_at", "device_name", "buy_back_id", "comments") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["carrier", ""], ["imei", ""], ["created_at", "2019-02-18 22:27:53.120748"], ["updated_at", "2019-02-18 22:27:53.120748"], ["device_name", ""], ["buy_back_id", 31], ["comments", ""]]
+  [1m[35m (193.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs/31
+Completed 302 Found in 336ms (ActiveRecord: 217.9ms)
+
+
+Started GET "/buy_backs/31" for 127.0.0.1 at 2019-02-18 17:27:53 -0500
+Processing by BuyBacksController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mBuyBack Load (5.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering buy_backs/show.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 31]]
+  Rendered buy_backs/show.html.erb within layouts/application (70.0ms)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `*' for nil:NilClass):
+    88:       <td><%= @devices.imei %> </td>
+    89:       <td><%= @devices.comments%></td>
+    90:       <td><%= number_to_currency(@devices.price) %> </td>
+    91:       <td><%= number_to_currency(@devices.price * @devices.quantity ) %> </td>
+    92:       <% running_total =  running_total + (@devices.price * @devices.quantity) %>
+    93: 
+    94:     </tr>
+  
+app/views/buy_backs/show.html.erb:91:in `block in _app_views_buy_backs_show_html_erb___1056002375_61464132'
+app/views/buy_backs/show.html.erb:83:in `_app_views_buy_backs_show_html_erb___1056002375_61464132'

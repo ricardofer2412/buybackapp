@@ -1,4 +1,4 @@
-<div class= "row">
+
 <%= form_with(model: buy_back, local: true) do |form| %>
   <% if buy_back.errors.any? %>
     <div id="error_explanation">
@@ -66,10 +66,10 @@
           </div>
   <hr>
 <div class="container">
-       <%= form.add_nested_fields_link :devices, 'Add More Devices', class: 'btn btn-warning' %>
+    <%= form.add_nested_fields_link :devices %>
 </div>
 <div class="container">
-       <%= form.nested_fields_for :devices do | new | %>
+     <%= form.nested_fields_for :devices do | new | %>
         <strong>Qty</strong><br>
         <%= new.text_field :quantity %>
         <strong>Carrier</strong><br>
@@ -79,12 +79,13 @@
         <strong>IMEI</strong><br>
          <%= new.text_field :imei %>
         <strong>Price </strong><br>
-        <%= new.text_field :price%>
+        <%= new.text_field :price %>
         <strong>Comments</strong><br>
-        <%= new.text_area :comments%>
+        <%= new.text_area :comments %>
         <%= new.remove_nested_fields_link %>
   <% end %>
 </div>
+<div class="container">
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
       </p>
       <input type="checkbox">
@@ -121,4 +122,3 @@
     <div class="form-group">
     <% end %>
 </div>
-<div>
