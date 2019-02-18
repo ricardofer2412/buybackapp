@@ -1,4 +1,4 @@
-
+<div class= "row">
 <%= form_with(model: buy_back, local: true) do |form| %>
   <% if buy_back.errors.any? %>
     <div id="error_explanation">
@@ -22,17 +22,17 @@
             <%= form.text_field :purchase_number, id: :buy_back_purchase_number %>
             </div>
             <div class="form-group">
-            <label><strong>Received Date:</strong></label><br>
+            <label><strong>Received Date</strong></label><br>
             <%= form.date_field :received_date %>
             </div>
             </div>
             <div class="col-lg-4">
               <div class="form-group">
-              <label><strong>First Name:</strong></label><br>
+              <label><strong>First Name</strong></label><br>
               <%= form.text_field :first_name, id: :buy_back_first_name %>
               </div>
               <div class="form-group">
-               <label><strong>Last Name:</strong></label><br>
+               <label><strong>Last Name</strong></label><br>
               <%= form.text_field :last_name, id: :buy_back_last_name %>
               </div>
               <div class="form-group">
@@ -65,27 +65,50 @@
             </div>
           </div>
   <hr>
-<div class="container">
-    <%= form.add_nested_fields_link :devices %>
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+       <%= form.add_nested_fields_link :devices, 'Add More Devices', class: 'btn btn-warning' %><br><hr>
+    </div>
+  </div>
 </div>
-<div class="container">
-     <%= form.nested_fields_for :devices do | new | %>
-        <strong>Qty</strong><br>
-        <%= new.text_field :quantity %>
+
+  <%= form.nested_fields_for :devices, wrapper_tag: :div do | new | %>
+
+  <div class="container">
+    <div class="row">
+      <div class="form-group"
+      <strong>Qty</strong><br>
+        <%= new.text_field :quantity %><%= new.remove_nested_fields_link %>
+      </div>
+      <div class="form-group"
         <strong>Carrier</strong><br>
-        <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %>
+      <%= new.select :carrier, ["", "Unlocked", "AT&T", "T-Mobile", "Verizon", "Sprint"] %><%= new.remove_nested_fields_link %>
+      </div>
+      <div class="form-group"
         <strong>Model</strong><br>
-        <%= new.text_field :device_name%>
+        <%= new.text_field :device_name%> <%= new.remove_nested_fields_link %>
+      </div>
+      <div class="form-group"
         <strong>IMEI</strong><br>
-         <%= new.text_field :imei %>
+         <%= new.text_field :imei %><%= new.remove_nested_fields_link %>
+         </div>
+       <div class="form-group"
         <strong>Price </strong><br>
-        <%= new.text_field :price %>
+        <%= new.text_field :price%> <%= new.remove_nested_fields_link %>
+      </div>
+      <div class="form-group"
         <strong>Comments</strong><br>
-        <%= new.text_area :comments %>
-        <%= new.remove_nested_fields_link %>
+        <%= new.text_area :comments%><%= new.remove_nested_fields_link %>
+      </div>
+      </div>
+      </div>
+
+
+  <hr>
   <% end %>
-</div>
-<div class="container">
+  <hr>
+  <div>
     <p> Do you agree that the information you provided is truthful to the best of your ability, that you may be contacted if there are issues with the device and possibly asked to provide a refund? *
       </p>
       <input type="checkbox">
@@ -122,3 +145,4 @@
     <div class="form-group">
     <% end %>
 </div>
+<div>
