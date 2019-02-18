@@ -35,11 +35,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'carrierwave', '~> 1.0'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
-gem 'devise-bootstrap-views'
 gem 'bootstrap-sass', '3.2.0.2'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'jquery-rails'
 gem 'nested_form_fields'
 gem 'will_paginate-bootstrap'
 gem 'will_paginate'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
