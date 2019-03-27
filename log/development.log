@@ -17136,3 +17136,357 @@ Processing by BuyBacksController#index as HTML
 Completed 200 OK in 867ms (Views: 814.6ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-27 11:53:25 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (180.6ms)
+Completed 500 Internal Server Error in 20425ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/config
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/images
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nested_form_fields-0.8.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/node_modules
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/images
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts):
+    3: <head>
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__654053262_59698980'
+Started GET "/" for 127.0.0.1 at 2019-03-27 11:53:58 -0400
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 1355ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap' with type 'application/javascript'
+Checked in these paths: 
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/config
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/images
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/app/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/nested_form_fields-0.8.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actioncable-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionview-5.1.6.1/lib/assets/compiled
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  C:/Users/Support/Desktop/rails/buybackapp/node_modules
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/fonts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/images
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.2.0.2/assets/javascripts
+  C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/popper_js-1.14.5/assets/javascripts):
+    3: <head>
+    4: <title>MOBILESOURCE</title>
+    5:    <%= csrf_meta_tags %>
+    6:    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8: 
+    9: </head>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__654053262_93693912'
+Started GET "/" for 127.0.0.1 at 2019-03-27 12:03:32 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 4944ms (Views: 4847.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/buy_backs/new" for 127.0.0.1 at 2019-03-27 12:04:13 -0400
+Processing by BuyBacksController#new as HTML
+  Rendering buy_backs/new.html.erb within layouts/application
+  Rendered buy_backs/_form.html.erb (1473.3ms)
+  Rendered buy_backs/new.html.erb within layouts/application (1528.3ms)
+Completed 200 OK in 6333ms (Views: 6272.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:04:44 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1036ms (Views: 982.8ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/buy_backs/22" for 127.0.0.1 at 2019-03-27 12:04:51 -0400
+Processing by BuyBacksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jLntG2Xt3IpT8Bk7k8rDXUjntBU62oxoxgTVjNlmrFpT/cxg+y6M7OtutEXUDzR8dPQkRbREO+52HOY4lc6GTg==", "id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDevice Load (0.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 22]]
+  [1m[35mSQL (10.0ms)[0m  [1m[31mDELETE FROM "devices" WHERE "devices"."id" = ?[0m  [["id", 14]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "buy_backs" WHERE "buy_backs"."id" = ?[0m  [["id", 22]]
+  [1m[35m (318.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/buy_backs
+Completed 302 Found in 693ms (ActiveRecord: 328.3ms)
+
+
+Started GET "/buy_backs" for 127.0.0.1 at 2019-03-27 12:04:51 -0400
+Processing by BuyBacksController#index as HTML
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY updated_at asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 732ms (Views: 635.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/buy_backs/22" for 127.0.0.1 at 2019-03-27 12:04:53 -0400
+Processing by BuyBacksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jLntG2Xt3IpT8Bk7k8rDXUjntBU62oxoxgTVjNlmrFpT/cxg+y6M7OtutEXUDzR8dPQkRbREO+52HOY4lc6GTg==", "id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BuyBack with 'id'=22):
+  
+app/controllers/buy_backs_controller.rb:69:in `set_buy_back'
+Started DELETE "/buy_backs/22" for 127.0.0.1 at 2019-03-27 12:04:57 -0400
+Processing by BuyBacksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jLntG2Xt3IpT8Bk7k8rDXUjntBU62oxoxgTVjNlmrFpT/cxg+y6M7OtutEXUDzR8dPQkRbREO+52HOY4lc6GTg==", "id"=>"22"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Completed 404 Not Found in 900ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BuyBack with 'id'=22):
+  
+app/controllers/buy_backs_controller.rb:69:in `set_buy_back'
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:19:51 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 492ms (Views: 438.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:20:41 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (2.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 577ms (Views: 521.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs/25/edit" for 127.0.0.1 at 2019-03-27 12:20:57 -0400
+Processing by BuyBacksController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" WHERE "buy_backs"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering buy_backs/edit.html.erb within layouts/application
+  [1m[36mDevice Load (1.0ms)[0m  [1m[34mSELECT "devices".* FROM "devices" WHERE "devices"."buy_back_id" = ?[0m  [["buy_back_id", 25]]
+  Rendered buy_backs/_form.html.erb (8.0ms)
+  Rendered buy_backs/edit.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 641ms (Views: 576.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:23:13 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 506ms (Views: 451.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:23:30 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 524ms (Views: 471.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:24:52 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 528ms (Views: 476.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:25:55 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 559ms (Views: 504.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:26:13 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 537ms (Views: 480.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:27:43 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 558ms (Views: 504.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:29:05 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 541ms (Views: 487.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:29:15 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 531ms (Views: 477.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:30:29 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 613ms (Views: 559.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:30:51 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 533ms (Views: 480.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:31:00 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 545ms (Views: 489.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:32:24 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 581ms (Views: 527.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:35:51 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 543ms (Views: 487.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:36:26 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 557ms (Views: 502.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:37:12 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 563ms (Views: 510.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:37:43 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (0.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 545ms (Views: 491.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/buy_backs?direction=asc&sort=status" for 127.0.0.1 at 2019-03-27 12:38:07 -0400
+Processing by BuyBacksController#index as HTML
+  Parameters: {"direction"=>"asc", "sort"=>"status"}
+  Rendering buy_backs/index.html.erb within layouts/application
+  [1m[36mBuyBack Load (1.0ms)[0m  [1m[34mSELECT  "buy_backs".* FROM "buy_backs" ORDER BY status asc LIMIT ? OFFSET ?[0m  [["LIMIT", 7], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "buy_backs"[0m
+  Rendered buy_backs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 554ms (Views: 499.7ms | ActiveRecord: 1.0ms)
+
+

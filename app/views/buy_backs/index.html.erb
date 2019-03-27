@@ -41,14 +41,62 @@
 </div>
 <hr>
 <div class="container">
-<div class="digg_pagination">
 
-    <%= will_paginate @buy_backs, :container => false %>
+  <div style="float: right" class="digg_pagination">
+ <%= will_paginate @buy_backs, :container => false %>
   </div>
-  </div>
+
+
+  <div style="float: left">
+    <%= link_to 'New Buy Back', new_buy_back_path, class: 'btn btn-primary' %>
+</div>
+</div>
+</div>
 <hr>
-<%= link_to 'New Buy Back', new_buy_back_path, class: 'btn btn-primary' %>
-</div>
-</div>
-
-<br> 
+<br>
+<div style="float: left">
+  <h2> Jenna's Schedule </h2>
+  <table class="table table-hover">
+<thead>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thurday</th>
+    <th>Friday</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Off</td>
+    <td>2-6</td>
+    <td>12-6</td>
+    <td>2-6</td>
+    <td>2-6</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div style="float: right">
+    <h2> Richard's Schedule </h2>
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thurday</th>
+      <th>Friday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:30-6</td>
+      <td>11-5</td>
+      <td>8:30-2:30<br>4-6</td>
+      <td>11-5</td>
+      <td>2-6</td>
+      </tr>
+      </tbody>
+    </table>
+    </div>
